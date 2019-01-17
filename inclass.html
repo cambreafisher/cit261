@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    Adding Machine
+</head>
+<body>
+    <script>
+        function addNum() {
+            const num1 = document.getElementById('input1').value;
+            const num2 = document.getElementById('input2').value;
+            const resultBox = document.getElementById('result');
+
+            resultBox.innerHTML = parseFloat(num1) + parseFloat(num2);
+        }
+            </script>
+    <span>
+    <input id="input1" default="1" type="number">
+    <input id="input2" default="1" type="number">
+</span>
+    <button id="addButton" onclick="addNum()"> + </button>
+    <span id="result"></span>
+</body>
+</html>
