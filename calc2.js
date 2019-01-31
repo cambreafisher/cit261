@@ -41,7 +41,8 @@ const calculator = {
     number1: 0,
     number2: 0,
     operation: '',
-    inputOutput: document.getElementById('calcInput')
+    inputOutput: document.getElementById('calcInput'),
+    
   };
   debugger;
 
