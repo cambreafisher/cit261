@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="ejs.css" />
     <script src="ejs4.js"></script>
 </head>
 <body>
-    <form action="square()">
-        <input type="text" id="number">
-        <input type="submit">
-    </form>
-    
+<div id="begin">
+    <h1 id="head">This is a div</h1>
+    <button id="mybutton" onclick="myfunc()">Change the div</button>
+</div >
+<!--HOW DO YOU GET INPUT?!?!?!-->
+    <div id="theSquare">
+        <form>
+            <input type="text" id="num"><br>
+            <button id="textbtn" onclick="squarethis()">Square it!</button>
+        </form>
+    <span id="result"></span>
+</div>
+
 </body>
 </html>
