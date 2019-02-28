@@ -26,10 +26,24 @@ function getView(viewPath) {
 }
 
 // adds a touchend event to element that will insert the view found at path into the content area of the index.html
-function addNavEvent(element, path) {}
+function addNavEvent(element, path) {
+  //add an event listener on the touchend
+  //send in the callback function
+  element.addEventListener('touchend', (e) => {
+    e.preventDefault(); //stops whatever would normally happen for that html
+    //attach the path and view you want 
+    let view = getView(insertView(view));
+    //getView returns a promise, so that needs to be fixed
+    ;
+  })
+}
 
 // inserts the view into the content area of index.html
 // remember that getView returns a promise!
 function insertView(viewPromise) {
   const contentElement = document.getElementById('content');
+  //whatever is returned is in here. go get the promise, then when it finishes, do the function
+  viewPromise.then(view => {
+    contentElement.innerHTML = view;
+  })
 }
